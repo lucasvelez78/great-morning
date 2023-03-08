@@ -8,7 +8,8 @@ let weather = {
         this.apiKey
     )
       .then((response) => response.json())
-      .then((data) => this.displayWeather(data));
+      .then((data) => this.displayWeather(data))
+      .catch(() => alert("oops!\nsomething went wrong\ntry again later"));
   },
   displayWeather: function (data) {
     const { name } = data;
@@ -52,7 +53,8 @@ let joke = {
       },
     })
       .then((response) => response.json())
-      .then((data) => this.displayJoke(data));
+      .then((data) => this.displayJoke(data))
+      .catch(() => alert("oops!\nsomething went wrong\ntry again later"));
   },
   displayJoke: function (data) {
     const { joke } = data;

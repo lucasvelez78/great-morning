@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://source.unsplash.com/1600x900/?street");
+  font-family: "Montserrat";
+}
+
+.card {
+  display: flex;
+  background: #000000d0;
+  border-radius: 5px;
+  padding: 30px;
+  width: 90%;
+  max-width: 740px;
+  color: white;
+}
+
+.weather-section {
+  min-width: 360px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  height: 30px;
+  margin: auto 10px;
+  border: none;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  width: 40px;
+  background: #7c7c7c2b;
+  color: whitesmoke;
+}
+
+.weather-main {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
+.temp {
+  margin: -10px auto 0;
+  font-size: 40px;
+}
+
+.description {
+  margin: 22px auto auto 8px;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 20px;
+}
+
+.icon {
+  width: 60px;
+}
+
+.loading {
+  visibility: hidden;
+}
+
+.joke-section {
+  margin: 25px auto;
+  text-align: center;
+}
+
+.joke-btn {
+  width: 90px;
+  padding: 10px;
+  font-size: 22px;
+  margin-bottom: 40px;
+}

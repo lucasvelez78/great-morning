@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="weather-section">
+        <h1>How's the weather in...</h1>
+        <div class="search-container">
+          <input type="text" class="search-bar" />
+          <button class="search-btn">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              height="1.5em"
+              width="1.5em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="weather loading">
+          <h1 class="city">London</h1>
+          <h1 class="temp">12 °C</h1>
+          <div class="weather-main">
+            <img src="" alt="icon" class="icon" />
+            <h4 class="description"></h4>
+          </div>
+          <p class="humidity"></p>
+          <p class="wind"></p>
+        </div>
+      </div>
+      <div class="joke-section">
+        <button class="joke-btn">Joke?</button>
+        <p class="joke"></p>
+      </div>
+    </div>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
